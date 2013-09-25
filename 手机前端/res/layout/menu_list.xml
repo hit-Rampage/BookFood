@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- menu list -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="28dip" >
+    <!-- 菜名 -->
+    <TextView
+        android:id="@+id/list_menu_name"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+    <!-- 货币符号 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dip"
+        android:text="￥"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+    <!-- 价格 -->
+    <TextView
+        android:id="@+id/list_menu_price"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/clock_dialog"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/clock_dialog_background">
+
+	<LinearLayout	
+	    android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="60dp">
+      <!--菜名label  -->
+	  <TextView
+	      android:paddingLeft="25dip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:text="@string/item_name_tip"
+	      android:textColor="#000000"
+	      android:textSize="25dip" >
+	  </TextView>
+	  <!-- 菜名 -->
+	  <TextView
+	      android:layout_marginLeft="5dip"
+	      android:id="@+id/item_name"
+	      android:gravity="center_horizontal"
+	      android:layout_width="160dip"
+	      android:layout_height="wrap_content"
+	      android:textSize="25dip"
+	      android:textColor="#000000">
+	  </TextView>
+	</LinearLayout>
+	<!-- 菜品图片 -->
+	<ImageView
+	    android:paddingTop="10dip"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_marginLeft="70dip"
+	    android:id="@+id/item_pic"/>
+	<LinearLayout	
+	    android:orientation="horizontal"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dp"
+		>
+	  <!--价格label  -->
+	  <TextView
+	      android:paddingLeft="25dip"
+	      android:text="@string/item_price_tip"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:textSize="25dip"
+	      android:textColor="#000000">
+	  </TextView>
+	  <!--价格  -->
+	  <TextView
+	      android:paddingLeft="30dip"
+	      android:id="@+id/item_price"
+	      android:layout_marginLeft="90dip"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content"
+	      android:textSize="25dip"
+	      android:textColor="#000000">
+	  </TextView>
+	</LinearLayout>
+	<LinearLayout	
+	    android:orientation="horizontal"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+		>
+	  <!--数量label  -->
+	  <TextView
+	      android:paddingLeft="25dip"
+	      android:text="@string/item_num_tip"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content"
+	      android:textSize="25dip"
+	      android:textColor="#000000">
+	  </TextView>
+	  <!--数量编辑框  -->
+	  <EditText
+	      android:layout_marginLeft="130dip"
+	      android:id="@+id/item_num_edit"
+	      android:inputType="number"
+	      android:layout_height="wrap_content"
+	      android:layout_width="50dip">
+	  </EditText>
+	</LinearLayout>
+	<!-- 提交购物车按钮 -->
+	<Button
+	    android:layout_marginTop="10dip"
+	    android:layout_marginLeft="140dip"
+	    android:id="@+id/confrim_intoCart"
+	    android:layout_height="50dip"
+	    android:layout_width="120dip"
+	    android:text="@string/item_confirm"
+	    android:textSize="18dip"
+	    android:layout_marginRight="20dip">
+	</Button>
+</LinearLayout>

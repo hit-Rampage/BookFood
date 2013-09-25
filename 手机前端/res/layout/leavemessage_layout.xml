@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+ <TextView
+     android:background="#5CACEE"
+     android:layout_width="match_parent"
+     android:layout_height="40dip"
+     android:text="@string/feedback"
+     android:textColor="#FFFFFF"
+     android:textSize="24dip"
+     android:gravity="center_horizontal|center_vertical"
+     >
+ </TextView>
+ <EditText 
+     android:id="@+id/message_body" 
+     android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:layout_weight="1"
+	 android:scrollbars="vertical" />
+
+ <Button
+     android:id="@+id/putforward"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="235dip"
+     android:text="@string/putforward" />
+  
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="28dip" >
+
+     <!-- 菜名 -->
+    <TextView
+        android:id="@+id/list_cart_name"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+    <!-- 份数 -->
+    <TextView
+        android:id="@+id/list_cart_num"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+    <!-- “份”字 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="份"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+    <!-- 货币符号-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:layout_marginLeft="30dip"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+    <!-- 总价 -->
+    <TextView
+        android:id="@+id/list_cart_price"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+ <TextView
+     android:background="#EE8262"
+     android:layout_width="match_parent"
+     android:layout_height="40dip"
+     android:text="@string/noodle"
+     android:textColor="#FFFFFF"
+     android:textSize="24dip"
+     android:gravity="center_horizontal|center_vertical"
+     >
+ </TextView>
+ <!-- ListView控件 -->
+ <ListView
+     android:id="@+id/listview_noodle" 
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="#838B8B"
+     android:cacheColorHint="#00000000"
+     >
+ </ListView>
+</LinearLayout>

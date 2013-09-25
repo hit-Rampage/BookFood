@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#838B8B">
+ <TextView
+     android:background="#CD96CD"
+     android:layout_width="match_parent"
+     android:layout_height="40dip"
+     android:text="@string/cart"
+     android:textColor="#FFFFFF"
+     android:textSize="24dip"
+     android:gravity="center_horizontal|center_vertical"
+     >
+ </TextView>
+ <!-- 结算按钮 -->
+ <Button
+     android:id="@+id/send_item"
+     android:layout_width="fill_parent"
+     android:layout_height="50dip"
+     android:text="@string/fill_info"
+     android:textSize="25dip">
+ </Button>
+  <LinearLayout
+     android:orientation="horizontal"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content">
+ <!-- 总计label -->
+ <TextView android:id="@+id/sum_label"
+    android:text="@string/sumup_label"
+    android:textSize="23dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:textColor="#FFFFFF"
+    >
+ </TextView>
+ <!-- 货币符号-->
+    <TextView android:id="@+id/price_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:layout_marginLeft="180dip"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+
+ <!-- 总计price -->
+ <TextView android:id="@+id/sum_price"
+    android:text="0"
+    android:textSize="23dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    >
+ </TextView>
+ </LinearLayout>
+ <!-- listview声明 -->
+ <ListView
+     android:id="@+id/listview_cart" 
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="#838B8B"
+     android:cacheColorHint="#00000000"
+     >
+ </ListView>
+ <!-- 空白提示 -->"
+ <TextView android:id="@+id/empty_tip"
+    android:textSize="20sp"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:text="@string/empty_tip"
+    android:gravity="center_horizontal"
+    android:textColor="#FFFFFF"
+    />
+</LinearLayout>
