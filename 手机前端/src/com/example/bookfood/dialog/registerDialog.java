@@ -98,7 +98,7 @@ public class registerDialog extends Activity {
 				DefaultHttpClient client = new DefaultHttpClient();
 				List<NameValuePair> list = new ArrayList<NameValuePair>();
 				HttpPost post = new HttpPost(
-						"http://10.42.0.1:8084/____manage/GetServlet");
+						"http://122.159.46.58:8084/____manage/GetServlet");
 				String sendType = "register";
 				JSONObject obj = new JSONObject();
 				obj.put("UserName", input_username);

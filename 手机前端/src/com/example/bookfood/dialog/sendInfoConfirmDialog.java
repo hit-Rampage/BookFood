@@ -108,7 +108,7 @@ public class sendInfoConfirmDialog extends Activity {
 			DefaultHttpClient client = new DefaultHttpClient();
 			List<NameValuePair> list = new ArrayList<NameValuePair>();
 			HttpPost post = new HttpPost(
-					"http://10.42.0.1:8084/____manage/GetServlet");
+					"http://122.159.46.58:8084/____manage/GetServlet");
 			// 打包顾客信息
 			String getUsername = username_edit.getText().toString();
 			String getAddress = address_edit.getText().toString();

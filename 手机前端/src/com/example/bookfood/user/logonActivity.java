@@ -153,7 +153,7 @@ public class logonActivity extends Activity {
 			DefaultHttpClient client = new DefaultHttpClient();
 			List<NameValuePair> list = new ArrayList<NameValuePair>();
 			HttpPost post = new HttpPost(
-					"http://10.42.0.1:8084/____manage/GetServlet");
+					"http://122.159.46.58:8084/____manage/GetServlet");
 			String sendType = "logon";
 			NameValuePair user_name = new BasicNameValuePair("user_name",
 					input_username);

@@ -75,7 +75,7 @@ public class detailMenuDialog extends Activity {
 		recieved_pic = bundle.getString("picOfItem");
 		item_name.setText(recieved_name);
 		item_price.setText(recieved_price + "元");
-		loadImage("http://10.42.0.1:8084/____manage/" + recieved_pic,
+		loadImage("http://122.159.46.58:8084/____manage/" + recieved_pic,
 				R.id.item_pic);
 		// 设置提交按钮响应
 		confirm_cart.setOnClickListener(new OnClickListener() {
