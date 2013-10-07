@@ -1,7 +1,6 @@
 package com.example.bookfood;
 
 import java.util.List;
-import java.util.Random;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,7 +8,6 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.provider.Settings.System;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -50,10 +48,9 @@ public class MainActivity extends Activity {
 	private Button aboutus_btn;
 	private Button feedback_btn;
 	private Button cart_btn;
-	private Button button1;
 
 	private List<Dish> dishes;
-	private static final String urlPath = "http://122.159.46.58:8084/____manage/PostServlet";
+	private static final String urlPath = "http://10.42.0.1:8084/____manage/PostServlet";
 	private static final String TAG = "MainActivity";
 
 	private dataBaseHelper dbHelper = null;
@@ -161,7 +158,6 @@ public class MainActivity extends Activity {
 		aboutus_btn = (Button) findViewById(R.id.aboutus_btn);
 		feedback_btn = (Button) findViewById(R.id.feedback_btn);
 		cart_btn = (Button) findViewById(R.id.cart_btn);
-		button1 = (Button) findViewById(R.id.button1);
 	}
 
 	/**
@@ -270,31 +266,12 @@ public class MainActivity extends Activity {
 
 			}
 		});
-		
-		button1.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent();
-				 Random ran = new Random();
-				switch(Math.abs(ran.nextInt())%3)
-				{	
-					case 0:
-						intent.setClass(MainActivity.this, noodleMenuActivity.class);
-						break;
-					case 1:
-						intent.setClass(MainActivity.this, stirMenuActivity.class);
-						break;
-					case 2:
-						intent.setClass(MainActivity.this, riceMenuActivity.class);
-						break;
-				}
-				startActivity(intent);
-			}
-		});
-	}
-	
+	};
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
+
 }
