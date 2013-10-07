@@ -52,12 +52,11 @@ public class DishLink {
     public void addDish(DishEntity dish) {
         try {
             con = new DBLink().getConn();
-            ps = con.prepareStatement("insert into Dish(DishName,DishSeries,DishImg,DishPrice) values(?,?,?,?)");
+            ps = con.prepareStatement("insert into Dish(DishName,DishSeries,DishImg,DishPrice) values(?, ?, ?, ?)");
             ps.setString(1, dish.getDishName());
             ps.setString(2, dish.getDishSeries());
             ps.setString(3, dish.getDishImg());
             ps.setDouble(4, dish.getDishPrice());
-
             ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

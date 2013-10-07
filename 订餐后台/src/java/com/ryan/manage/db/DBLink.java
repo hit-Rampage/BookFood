@@ -14,7 +14,7 @@ public class DBLink {
     public Connection getConn() {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            return DriverManager.getConnection("jdbc:mysql://localhost/manage","root","910911");
+            return DriverManager.getConnection("jdbc:mysql://localhost/manage?user=root&password=1&useUnicode=true&characterEncoding=utf8");
         } catch (Exception e) {
             e.printStackTrace();
         }
